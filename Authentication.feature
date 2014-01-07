@@ -1,4 +1,3 @@
-
  Authentication.featureCucumber
 
 Feature: Authentication
@@ -18,3 +17,11 @@ Scenario: Registering with an invalid e-mail
 	And I click "OK"
 	Then I should see the error "Invalid e-mail, please verify and try again."
 	And I should be on the registration page
+	
+Scenario: Registering with an empty e-mail
+	Given I am on the registration page and had given a file to print
+	When I fill the "E-mail" field with ""
+	And I click "OK"
+	Then I should see the error "Invalid e-mail, please verify and try again."
+	And I should be on the registration page
+	And I dismiss the browser //fechar browser
