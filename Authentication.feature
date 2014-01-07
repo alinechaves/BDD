@@ -1,8 +1,4 @@
-BDD
-===
- Example implementation  using BDD & SpecFlow.
- 
- 
+
  Authentication.featureCucumber
 
 Feature: Authentication
