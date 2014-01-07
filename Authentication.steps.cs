@@ -23,7 +23,7 @@ namespace TestNamespace.Steps
                     Config.AvailableBrowsers.InternetExplorer
                 });
         }
- 
+        
         [Given(@"I am on the registration page")]
         public void GivenIAmOnTheMainPage()
         {
@@ -78,6 +78,8 @@ namespace TestNamespace.Steps
  
                 web.CloseBrowser();
             });  
-        }
+       
+        
+        
     }
 }
